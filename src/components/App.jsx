@@ -2,6 +2,7 @@ import { Container } from './App.styled';
 import { Profile } from './Task1/Profile/Profile';
 import { Statistics } from './Task2/Statistics/Statistics';
 import { FriendList } from './Task3/FriendList/FriendList';
+import { Transactions } from './Task4/Transactions/Transactions';
 
 import user from '../user.json';
 import data from '../data.json';
@@ -16,6 +17,8 @@ export const App = () => {
       <Statistics data={data}></Statistics>
 
       <FriendList friends={friends}></FriendList>
+
+      <Transactions transactions={transactions}></Transactions>
     </Container>
   );
 };

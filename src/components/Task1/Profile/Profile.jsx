@@ -4,7 +4,6 @@ import { Description } from '../Description/Description';
 import { Stats } from '../Stats/Stats';
 
 export const Profile = ({ user }) => {
-  // console.log(user);
   return (
     <Box>
       <Description
