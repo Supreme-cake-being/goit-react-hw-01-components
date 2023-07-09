@@ -4,16 +4,6 @@ const Box = styled.div`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
-const PageTitle = styled.h2`
-  padding: 32px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 42px;
-  text-align: center;
-`;
-
 const List = styled.ul`
   display: flex;
 `;
@@ -50,4 +40,4 @@ const Percentage = styled.span`
   line-height: 22px;
 `;
 
-export { Box, PageTitle, List, Item, Label, Percentage };
+export { Box, List, Item, Label, Percentage };

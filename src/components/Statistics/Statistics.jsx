@@ -1,17 +1,11 @@
 import PropTypes from 'prop-types';
-import {
-  Box,
-  PageTitle,
-  List,
-  Item,
-  Label,
-  Percentage,
-} from './Statistics.styled';
+import { Title } from '../Title/Title';
+import { Box, List, Item, Label, Percentage } from './Statistics.styled';
 
-export const Statistics = ({ data }) => {
+export const Statistics = ({ title, data }) => {
   return (
     <Box>
-      <PageTitle>Upload stats</PageTitle>
+      <Title title={title}></Title>
 
       <List>
         {data.map(({ id, label, percentage }) => (
@@ -26,6 +20,7 @@ export const Statistics = ({ data }) => {
 };
 
 Statistics.propTypes = {
+  title: PropTypes.string,
   data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
